@@ -5,6 +5,26 @@ const favDialog = document.getElementById("new-book-dialog");
 const confirmBtn = favDialog.querySelector("#confirmBtn");
 const cancelBtn = favDialog.querySelector("#cancelBtn");
 
+
+class Book {
+    constructor(title, author, pages, read){
+
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.isRead = function(){
+        return this.read === 1 ? "read" : "not read yet"
+    }
+    this.info = function(){
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead()}`;
+
+    }
+
+    }
+}
+
+/*
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
@@ -20,6 +40,7 @@ function Book(title, author, pages, read){
 
     
 }
+*/
 
 function displayLibrary(){
 
