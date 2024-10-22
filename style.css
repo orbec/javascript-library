@@ -190,6 +190,14 @@ p {
     font-size: 14px;
 }
 
+.add-book-form input:valid {
+    border: solid 2px rgb(196, 196, 196);
+}
+
+.add-book-form input:invalid {
+    border: solid 2px rgb(197, 57, 57);
+}
+
 .form-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
